@@ -10,6 +10,12 @@ console.log(a % b) //chia lấy dư
 console.log(a++)
 console.log(b--)
 
+//Toán tử chuỗi
+var first_name = 'Bui '
+first_name += 'Huu '
+var last_name = 'Loc '
+console.log(first_name + last_name)
+
 //Toán tử so sánh
 if (a > b) {
     alert('Số a lớn hơn b')

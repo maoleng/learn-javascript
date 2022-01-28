@@ -1,0 +1,32 @@
+<!-- Nhập vào a, kiểm tra xem a có là số chính phương -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+	<form>
+		<input id = "a"><br>
+		<button id = "cal">CHECK</button>
+	<form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    	$("#cal").click(function(event) {
+    		event.preventDefault()
+    		let a = Number($("#a").val())
+            for ( i = 1; i <= a; i++ ) {
+                if ( Math.sqrt(a) == i ) {
+                    console.log('YES')
+                    return 0
+                }
+            }
+            console.log('NO')
+    	})
+    })
+    </script>
+</body>
+</html>

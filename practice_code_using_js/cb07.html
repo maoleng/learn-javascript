@@ -1,0 +1,27 @@
+<!-- Nhập vào bán kính, tính chu vi và diện tích hình tròn -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+	<form>
+		<input id = "a">
+		<button id = "cal">CALCULATE</button>
+	<form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    	$("#cal").click(function(event) {
+    		event.preventDefault()
+    		let a = Number($("#a").val())
+            console.log( 3.14 * 2 * a )
+            console.log( a * a * 3.14 )
+    	})
+    })
+    </script>
+</body>
+</html>

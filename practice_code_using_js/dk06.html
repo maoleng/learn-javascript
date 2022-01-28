@@ -1,0 +1,38 @@
+<!-- Nhập vào a và b, giải hệ phương trình ax+b=0 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+	<form>
+		<input id = "a"><br>
+		<input id = "b"><br>
+		<button id = "cal">CALCULATE</button>
+	<form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    	$("#cal").click(function(event) {
+    		event.preventDefault()
+    		let a = Number($("#a").val())
+    		let b = Number($("#b").val())
+            if ( a == 0 ) {
+                console.log('NO')
+                return
+            }
+            if ( b == 0 ) {
+                console.log('INF')
+                return
+            }
+            console.log((-b/a).toFixed(2))
+        
+            
+    	})
+    })
+    </script>
+</body>
+</html>

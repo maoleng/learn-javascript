@@ -1,0 +1,34 @@
+<!-- Nhập vào a, b và c, giải hệ phương trình ax^2+bx+c=0 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+	<form>
+		<input id = "a"><br>
+		<input id = "b"><br>
+        <input id = "c"><br>
+		<button id = "cal">CALCULATE</button>
+	<form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    	$("#cal").click(function(event) {
+    		event.preventDefault()
+    		let a = Number($("#a").val())
+    		let b = Number($("#b").val())
+            let c = Number($("#c").val())
+            var sqrt_delta = Math.sqrt(b*b-4*a*c)
+            var x1 = (( -b - sqrt_delta ) / 2 * a )
+            var x2 = (( -b + sqrt_delta )/ 2 * a )
+            console.log(x1)
+            console.log(x2)
+    	})
+    })
+    </script>
+</body>
+</html>
